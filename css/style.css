@@ -7,6 +7,8 @@
 
 html,
 body {
+    background: #eef8ff;
+
     scroll-behavior: smooth;
 }
 
@@ -25,7 +27,7 @@ body {
 /* ANCHOR START NAV SECTION */
 
 .logo {
-    width: 6rem;
+    width: 4rem;
 }
 
 
@@ -207,47 +209,47 @@ button:not(:disabled):hover i {
     }
 
     34% {
-        content: "consa";
+        content: "consu";
     }
 
     36% {
-        content: "consal";
+        content: "consul";
     }
 
     38% {
-        content: "conasalt";
+        content: "conasult";
     }
 
     40% {
-        content: "consalta";
+        content: "consulta";
     }
 
     42% {
-        content: "consaltan";
+        content: "consultan";
     }
 
     44% {
-        content: "consaltant";
+        content: "consultant";
     }
 
     46% {
-        content: "consaltan";
+        content: "consultan";
     }
 
     48% {
-        content: "consalta";
+        content: "consulta";
     }
 
     50% {
-        content: "consalt";
+        content: "consult";
     }
 
     52% {
-        content: "consal";
+        content: "consul";
     }
 
     54% {
-        content: "consa";
+        content: "consu";
     }
 
     56% {
@@ -518,9 +520,5 @@ textarea {
 
 /* ANCHOR END CONTACT SECTION */
 
-.reserved{
-    text-align: center;
-    background-color: #eee;
-    padding: 10px;
-    font-size: .75rem;
-}
+
+/* ANCHOR START FOOTER SECTION */
