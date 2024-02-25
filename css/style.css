@@ -517,3 +517,10 @@ textarea {
 }
 
 /* ANCHOR END CONTACT SECTION */
+
+.reserved{
+    text-align: center;
+    background-color: #eee;
+    padding: 10px;
+    font-size: .75rem;
+}
