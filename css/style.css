@@ -1,0 +1,519 @@
+:root {
+    --main-color: #050e0f;
+    --creative-team: #1f1f1f;
+    --WHAT-WE-DO: #1f1f1f;
+    --Cheap-prices: #f7f7f7;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/* ANCHOR FONTS  */
+
+@font-face {
+    font-family: " Poppins";
+    src: url("../fonts/Poppins-Bold.ttf");
+}
+
+/* ANCHOR FONTS  */
+
+
+
+
+/* ANCHOR START NAV SECTION */
+
+.logo {
+    width: 6rem;
+}
+
+
+.social-icon i {
+    transition: all 0.2s ease-in;
+}
+
+.social-icon i:hover {
+    opacity: 0.7;
+    cursor: pointer;
+
+}
+
+/* ANCHOR END NAV SECTION */
+
+
+
+/* ANCHOR START HOME SECTION */
+#home {
+
+    height: 100vh;
+    position: relative;
+}
+
+#home h1 {
+    font-size: 4rem;
+    font-family: " Poppins";
+}
+
+#home-layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 31, 31, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+}
+
+#home-layer .btn-custom {
+    padding: 1.1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: var(--main-color);
+
+    transition: all 1s;
+    font-size: 1rem;
+}
+
+
+#home-layer .btn-custom:hover {
+    transform: translateY(-3px);
+}
+
+
+#home-btn-2:hover {
+    background-color: white !important;
+    color: black;
+}
+
+
+
+.layer {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+button:not(:disabled):hover .layer {
+    transform: translateX(100%);
+}
+
+
+button:not(:disabled):hover i {
+    z-index: 1;
+}
+
+/* ANCHOR END HOME SECTION */
+
+
+
+
+/* ANCHOR START WHO WE ARE  SECTION */
+
+
+#ch-word::after {
+    content: "";
+    animation-name: span-change;
+    animation-duration: 6s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    color: var(--main-color);
+}
+
+.who-we-are p {
+    font-size: 1.25rem;
+}
+
+@keyframes span-change {
+
+    0% {
+        content: "l";
+    }
+
+    2% {
+        content: "la";
+    }
+
+    4% {
+        content: "law";
+    }
+
+    6% {
+        content: "lawy";
+    }
+
+    8% {
+        content: "lawye";
+    }
+
+    10% {
+        content: "lawyer";
+    }
+
+    12% {
+        content: "lawye";
+    }
+
+    14% {
+        content: "lawy";
+    }
+
+    16% {
+        content: "law";
+    }
+
+    18% {
+        content: "la";
+    }
+
+    20% {
+        content: "l";
+    }
+
+    22% {
+        content: "";
+    }
+
+    24% {
+        content: "";
+    }
+
+    26% {
+        content: "c";
+    }
+
+    28% {
+        content: "co";
+    }
+
+    30% {
+        content: "con";
+    }
+
+    32% {
+        content: "cons";
+    }
+
+    34% {
+        content: "consa";
+    }
+
+    36% {
+        content: "consal";
+    }
+
+    38% {
+        content: "conasalt";
+    }
+
+    40% {
+        content: "consalta";
+    }
+
+    42% {
+        content: "consaltan";
+    }
+
+    44% {
+        content: "consaltant";
+    }
+
+    46% {
+        content: "consaltan";
+    }
+
+    48% {
+        content: "consalta";
+    }
+
+    50% {
+        content: "consalt";
+    }
+
+    52% {
+        content: "consal";
+    }
+
+    54% {
+        content: "consa";
+    }
+
+    56% {
+        content: "cons";
+    }
+
+    58% {
+        content: "con";
+    }
+
+    60% {
+        content: "co";
+    }
+
+    62% {
+        content: "c";
+    }
+
+    64% {
+        content: "";
+    }
+
+    66% {
+        content: "";
+    }
+
+    68% {
+        content: "";
+    }
+
+    70% {
+        content: "";
+    }
+
+    72% {
+        content: "";
+    }
+
+    74% {
+        content: "";
+    }
+
+    76% {
+        content: "";
+    }
+
+    80% {
+        content: "";
+    } 
+}
+
+/* ANCHOR END WHO WE ARE  SECTION */
+
+
+
+
+
+
+
+/* ANCHOR START Creative Team  SECTION */
+
+
+#Creative-Team h2 {
+    font-family: " Poppins";
+    font-size: 4rem;
+    opacity: 0.1;
+}
+
+#Creative-Team h3 {
+    color: var(--creative-team);
+    font-family: " Poppins";
+    font-size: 2rem;
+}
+
+
+#Creative-Team h4 {
+    font-size: 1.125rem;
+}
+
+
+
+.team-image .team-layer {
+    background-color: var(--main-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+    font-weight: 700px
+}
+
+
+.team-image:hover .team-layer {
+    transform: translateY(-100%);
+}
+
+/* ANCHOR END Creative Team  SECTION */
+
+
+
+
+
+
+/* ANCHOR Start WHAT-WE-DO  SECTION */
+
+#WHAT-WE-DO {
+    background-color: var(--WHAT-WE-DO);
+    color: white;
+    opacity: 0.7;
+    padding: 7rem;
+
+}
+
+#WHAT-WE-DO li {
+    list-style-type: none;
+    padding: 0.8rem;
+}
+
+#WHAT-WE-DO h4 {
+    font-size: 0.8125rem;
+    letter-spacing: 0.1rem;
+
+}
+
+#WHAT-WE-DO p {
+    font-size: 1rem;
+
+
+}
+
+#WHAT-WE-DO h2 {
+    font-size: 4.8125rem;
+    letter-spacing: 0.1rem;
+
+    opacity: 0.1;
+
+}
+
+
+
+
+/* ANCHOR END WHAT-WE-DO  SECTION */
+
+
+
+/* ANCHOR START Cheap-Prices  SECTION */
+#Cheap-Prices .CARD {
+
+    width: 100%;
+    height: 400px;
+    background-color: teal;
+}
+
+#Cheap-Prices {
+    background-color: var(--Cheap-prices);
+}
+
+#Cheap-Prices h2 {
+    font-family: " Poppins";
+    font-size: 4rem;
+    opacity: 0.1;
+}
+
+#Cheap-Prices h3 {
+    color: var(--creative-team);
+    font-family: " Poppins";
+    font-size: 2rem;
+}
+
+
+#Cheap-Prices h4 {
+    font-size: 1.125rem;
+}
+
+#Cheap-Prices h5 {
+    font-size: 3.5rem;
+}
+
+#Cheap-Prices span {
+    vertical-align: top;
+    font-size: 1.5rem;
+}
+
+
+.card {
+    box-shadow: 0 0 65px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    transition: all 0.7s ease-in-out;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-3px);
+}
+
+.Active-cusome {
+    color: var(--main-color);
+}
+
+.card-active {
+    padding-top: 30rem;
+}
+
+
+#Cheap-Prices .item {
+    background-color: white;
+
+    box-shadow: 0 0 65px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#Cheap-Prices .custom-img {
+    width: 6em;
+    height: 6rem;
+    transform: translateY(-50%);
+
+
+}
+
+.carousel-indicators [data-bs-target] {
+
+    width: 0.6875rem;
+    height: 0.6875rem;
+    border-radius: 50%;
+    border: 0;
+    background-color: var(--main-color);
+
+
+}
+
+.arrow {
+    transition: all 0.5s;
+
+}
+
+.arrow:hover {
+    transform: translateX(10px);
+    color: var(--main-color) !important;
+}
+
+/* ANCHOR END Cheap-Prices  SECTION */
+
+
+
+/* ANCHOR START CONTACT SECTION */
+
+#contact .content h3 {
+    font-size: 4.375rem;
+    opacity: 0.1;
+    font-weight: bolder;
+}
+
+#contact .content h2 {
+    transform: translateY(100%);
+    font-weight: bolder;
+}
+
+
+textarea {
+    width: 100%;
+}
+
+/* ANCHOR END CONTACT SECTION */
