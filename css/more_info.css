@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'popins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #eef8ff;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right,#353739,#353739);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius:125px ;
+    font-size: 13px;
+    line-height: 20px;
+}
+.row{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2),.col:nth-child(3){
+    flex-basis: 15%;
+}
+.logo {
+    width: 100px;
+    margin-bottom: 30px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.social-icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    margin-right: 15px;
+    color: #000;
+    background: #fff;
+}
+hr{
+    width: 90%;
+    border-bottom: 1px solid #000;
+    border: 1;
+    margin: 20px auto;
+}
+.copyright{
+    text-align: center;
+}
+.underline{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 3px;
+    background: #000000;
+    top: 30px;
+    overflow: hidden;
+}
+.underline span{
+    position: absolute;
+    left: 10px;
+    width: 15px;
+    height: 100%;
+    border-radius: 3px;
+    background: #fff;
+    top: 0;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving {
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+@media (max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+    .col:nth-child(2),.col:nth-child(3){
+        flex-basis: 100%;
+    }
+
+}
