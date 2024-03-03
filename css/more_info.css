@@ -1,26 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'popins', sans-serif;
-    box-sizing: border-box;
-}
-
-body{
-    background: #eef8ff;
-}
-
-footer{
+.custom-footer {
     width: 100%;
     position: absolute;
     bottom: 0;
-    background: linear-gradient(to right,#353739,#353739);
+    background: linear-gradient(to right, #353739, #353739);
     color: #fff;
     padding: 100px 0 30px;
-    border-top-left-radius:125px ;
+    border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 20px;
 }
-.row{
+
+.custom-row {
     display: flex;
     width: 85%;
     justify-content: space-between;
@@ -28,37 +18,45 @@ footer{
     flex-wrap: wrap;
     margin: auto;
 }
-.col{
+
+.custom-col {
     flex-basis: 25%;
     padding: 10px;
 }
 
-.col:nth-child(2),.col:nth-child(3){
+.custom-col:nth-child(2),
+.custom-col:nth-child(3) {
     flex-basis: 15%;
 }
-.logo {
+
+.custom-logo {
     width: 100px;
     margin-bottom: 30px;
 }
-.col h3{
+
+.custom-col h3 {
     width: fit-content;
     margin-bottom: 40px;
     position: relative;
 }
-.email-id{
+
+.custom-email-id {
     width: fit-content;
     border-bottom: 1px solid #ccc;
     margin: 20px 0;
 }
-ul li{
+
+.custom-ul li {
     list-style: none;
     margin-bottom: 12px;
 }
-ul li a{
+
+.custom-ul li a {
     text-decoration: none;
     color: #fff;
 }
-.social-icons .fab{
+
+.custom-social-icons .fab {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -69,16 +67,19 @@ ul li a{
     color: #000;
     background: #fff;
 }
-hr{
+
+.custom-hr {
     width: 90%;
     border-bottom: 1px solid #000;
     border: 1;
     margin: 20px auto;
 }
-.copyright{
+
+.custom-copyright {
     text-align: center;
 }
-.underline{
+
+.custom-underline {
     position: absolute;
     left: 0;
     width: 100%;
@@ -88,7 +89,8 @@ hr{
     top: 30px;
     overflow: hidden;
 }
-.underline span{
+
+.custom-underline span {
     position: absolute;
     left: 10px;
     width: 15px;
@@ -98,23 +100,28 @@ hr{
     top: 0;
     animation: moving 2s linear infinite;
 }
+
 @keyframes moving {
-    0%{
+    0% {
         left: -20px;
     }
-    100%{
+
+    100% {
         left: 100%;
     }
 }
-@media (max-width: 700px){
-    footer{
+
+@media (max-width: 700px) {
+    .custom-footer {
         bottom: unset;
     }
-    .col{
-        flex-basis: 100%;
-    }
-    .col:nth-child(2),.col:nth-child(3){
+
+    .custom-col {
         flex-basis: 100%;
     }
 
+    .custom-col:nth-child(2),
+    .custom-col:nth-child(3) {
+        flex-basis: 100%;
+    }
 }
